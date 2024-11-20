@@ -5,3 +5,9 @@
 body {
   background: rgb(241, 245, 241);
 }
+
+a.active {
+  background-color: whitesmoke;
+  border-color: goldenrod;
+  width: 100%;
+}

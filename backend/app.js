@@ -13,12 +13,13 @@ connectDb();
 //middleware
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(
+/* app.use(
   cors({
     credentials: true,
     origin: process.env.FRONTEND_URL,
   })
-);
+); */
+app.use(cors())
 
 //api end point
 app.use("/api/food", foodRouter);
